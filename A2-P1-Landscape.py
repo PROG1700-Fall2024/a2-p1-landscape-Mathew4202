@@ -30,10 +30,10 @@ def main():
     trees = int(input("Enter the number of trees: "))
 
     #calculatuons
-    squareFeet = length * width
+    squareFeet = length * width # This is the calculation for yhe area of the house
 
     if grass == "fescue":
-        grassPrice = 0.05 * squareFeet
+        grassPrice = 0.05 * squareFeet # i use this to find houmuch the grass would be depending on the area or square feet of the landscape
     elif grass == "bentgrass":
         grassPrice = 0.02 * squareFeet
     elif grass == "campus":
@@ -44,7 +44,7 @@ def main():
     else: 
         upCharge = 0
 
-    totalCost = grassPrice + (trees * 100) + labour + upCharge
+    totalCost = grassPrice + (trees * 100) + labour + upCharge # This calculates the total cost required
         
     
     print("Total cost for house", address, f"is: ${totalCost:.2f}")
